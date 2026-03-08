@@ -1,0 +1,6 @@
+numpy
+polars
+scipy
+pyulog
+PySide6
+pyqtgraph

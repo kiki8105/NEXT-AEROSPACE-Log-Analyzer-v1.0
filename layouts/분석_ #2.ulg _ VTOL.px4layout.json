@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "tab_name": "분석: #2.ulg | VTOL",
+  "aircraft_type": "VTOL",
+  "theme": "Light Mode",
+  "root": {
+    "type": "splitter",
+    "orientation": "vertical",
+    "sizes": [
+      209,
+      208,
+      209
+    ],
+    "children": [
+      {
+        "type": "splitter",
+        "orientation": "horizontal",
+        "sizes": [
+          444,
+          443
+        ],
+        "children": [
+          {
+            "type": "plot",
+            "title": "Roll Angle (Actual) vs Roll Angle Setpoint",
+            "legend_visible": true,
+            "signals": [
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_attitude_setpoint_0",
+                "signal_name": "roll_sp_euler",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#ff6b6b",
+                "style": "solid",
+                "width": 2.0
+              },
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_attitude_0",
+                "signal_name": "roll_euler",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#4da3ff",
+                "style": "solid",
+                "width": 1.6
+              }
+            ],
+            "special": null
+          },
+          {
+            "type": "plot",
+            "title": "Roll Angular Rate (Actual) vs Roll Angular Rate Setpoint",
+            "legend_visible": true,
+            "signals": [
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_rates_setpoint_0",
+                "signal_name": "roll",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#ff6b6b",
+                "style": "solid",
+                "width": 2.0
+              },
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_angular_velocity_0",
+                "signal_name": "xyz[0]",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#4da3ff",
+                "style": "solid",
+                "width": 1.6
+              }
+            ],
+            "special": null
+          }
+        ]
+      },
+      {
+        "type": "splitter",
+        "orientation": "horizontal",
+        "sizes": [
+          444,
+          443
+        ],
+        "children": [
+          {
+            "type": "plot",
+            "title": "Pitch Angle (Actual) vs Pitch Angle Setpoint",
+            "legend_visible": true,
+            "signals": [
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_attitude_setpoint_0",
+                "signal_name": "pitch_sp_euler",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#ff6b6b",
+                "style": "solid",
+                "width": 2.0
+              },
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_attitude_0",
+                "signal_name": "pitch_euler",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#4da3ff",
+                "style": "solid",
+                "width": 1.6
+              }
+            ],
+            "special": null
+          },
+          {
+            "type": "plot",
+            "title": "Pitch Angular Rate (Actual) vs Pitch Angular Rate Setpoint",
+            "legend_visible": true,
+            "signals": [
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_rates_setpoint_0",
+                "signal_name": "pitch",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#ff6b6b",
+                "style": "solid",
+                "width": 2.0
+              },
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_angular_velocity_0",
+                "signal_name": "xyz[1]",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#4da3ff",
+                "style": "solid",
+                "width": 1.6
+              }
+            ],
+            "special": null
+          }
+        ]
+      },
+      {
+        "type": "splitter",
+        "orientation": "horizontal",
+        "sizes": [
+          444,
+          443
+        ],
+        "children": [
+          {
+            "type": "plot",
+            "title": "Yaw Angle (Actual) vs Yaw Angle Setpoint",
+            "legend_visible": true,
+            "signals": [
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_attitude_setpoint_0",
+                "signal_name": "yaw_sp_euler",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#ff6b6b",
+                "style": "solid",
+                "width": 2.0
+              },
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_attitude_0",
+                "signal_name": "yaw_euler",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#4da3ff",
+                "style": "solid",
+                "width": 1.6
+              }
+            ],
+            "special": null
+          },
+          {
+            "type": "plot",
+            "title": "Yaw Angular Rate (Actual) vs Yaw Angular Rate Setpoint",
+            "legend_visible": true,
+            "signals": [
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_rates_setpoint_0",
+                "signal_name": "yaw",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#ff6b6b",
+                "style": "solid",
+                "width": 2.0
+              },
+              {
+                "file_name": "#2.ulg",
+                "topic_name": "vehicle_angular_velocity_0",
+                "signal_name": "xyz[2]",
+                "x_axis_col": "timestamp_sec",
+                "is_fft": false,
+                "color": "#4da3ff",
+                "style": "solid",
+                "width": 1.6
+              }
+            ],
+            "special": null
+          }
+        ]
+      }
+    ]
+  }
+}
