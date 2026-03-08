@@ -1,3 +1,2 @@
-# PX4_Log_Platform
+# NEXT AEROSPACE Log Analyzer User Manual
 
-- Release/배포 가이드: `RELEASE_GUIDE_v1.4.md`
